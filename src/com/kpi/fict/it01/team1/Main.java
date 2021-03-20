@@ -18,7 +18,7 @@ public class Main {
         }
 
         var wordsUsageFrequencyMapByDescending =
-                MapUtils.orderMapByValueDescending(FirstTaskProcessor.groupWords(inputText));
+                MapUtils.orderMapByValueIncreasing(FirstTaskProcessor.groupWords(inputText));
 
         System.out.println(wordsUsageFrequencyMapByDescending.entrySet().iterator().next().getKey());
     }
